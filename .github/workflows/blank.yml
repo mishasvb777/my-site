@@ -21,6 +21,9 @@ jobs:
         with:
           node-version: '16' # укажите версию Node.js
 
+      - name: Install ca-certificates
+        run: sudo apt-get install -y ca-certificates
+
       - name: Install dependencies
         run: sudo npm install
 
