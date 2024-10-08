@@ -11,18 +11,10 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
-      - name: Install lftp
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y lftp
-
       - name: Install Node.js
         uses: actions/setup-node@v2
         with:
           node-version: '16' # укажите версию Node.js
-
-      - name: Install ca-certificates
-        run: sudo apt-get install -y ca-certificates
 
       - name: Install dependencies
         run: sudo npm install
@@ -37,8 +29,6 @@ jobs:
           FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
         run: |
           sudo apt-get update
-          sudo apt-get install -y lftp
-          lftp -f "
           open $FTP_SERVER
           user $FTP_USERNAME $FTP_PASSWORD
           mirror -R bundle/ /www/lm-test-page.ru
