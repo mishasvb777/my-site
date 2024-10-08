@@ -1,3 +1,3 @@
 export const foo = () => {
-  console.log('777')
+  console.log('999')
 }
