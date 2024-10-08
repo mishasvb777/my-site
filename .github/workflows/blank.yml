@@ -31,6 +31,6 @@ jobs:
           sudo apt-get update
           open $FTP_SERVER
           user $FTP_USERNAME $FTP_PASSWORD
-          mirror -R bundle/ /www/lm-test-page.ru
+          cp -r /bundle/* /www/lm-test-page.ru/
           bye
           "
