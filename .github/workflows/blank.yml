@@ -38,6 +38,6 @@ jobs:
           lftp -f "
           open $FTP_SERVER
           user $FTP_USERNAME $FTP_PASSWORD
-          mirror -R build/ /www/lm-test-page.ru
+          mirror -R bundle/ /www/lm-test-page.ru
           bye
           "
