@@ -31,6 +31,6 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y lftp
           lftp -u $FTP_USERNAME,$FTP_PASSWORD $FTP_SERVER <<EOF
-          mirror -R bundle /www/lm-test-page.ru/
+          mirror -R bundle/ /www/lm-test-page.ru/
           bye
           "
