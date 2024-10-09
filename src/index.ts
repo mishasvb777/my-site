@@ -1,5 +1,5 @@
 const getHomePage = async () => {
-  const res = await fetch('http://lm-test-page.ru/home')
+  const res = await fetch('https://lm-test-page.ru/home')
   const data = await res.json()
   return data
 }
