@@ -1,5 +1,12 @@
-import { foo } from './test'
+const getHomePage = async () => {
+  const res = await fetch('http://localhost:3000/home')
+  const data = await res.json()
+  return data
+}
 
-foo()
+const displayData = async () => {
+  const data = await getHomePage()
+  console.log(data)
+}
 
-console.log(123)
+displayData()

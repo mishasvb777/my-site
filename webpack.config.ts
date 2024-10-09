@@ -30,8 +30,13 @@ module.exports = {
   },
   devtool: 'inline-source-map',
   devServer: {
-    mode: 'development',
-    port: 3000,
-    path: path,
+    client: {
+      overlay: false, // Отключает оверлей с ошибками и предупреждениями
+    },
+    static: {
+      directory: path.join(__dirname, 'bundle'),
+    },
+    port: 3001,
+    open: true,
   },
 }
