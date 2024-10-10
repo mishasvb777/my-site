@@ -1,8 +1,7 @@
-const PORT = 3000
-
-const BASE_URL = `http://194.58.114.13:${PORT}`
-
-const getHomePage = async () => {
+export const getHomePage = async (): Promise<{
+  message: string
+  id: number
+}> => {
   const res = await fetch(`${BASE_URL}/home`)
   const data = await res.json()
   return data
