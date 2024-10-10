@@ -1,3 +1,5 @@
+import { BASE_URL } from '../api/urls'
+
 export const getHomePage = async (): Promise<{
   message: string
   id: number

@@ -11,10 +11,7 @@
   },
   "ts-node": {
     "compilerOptions": {
-      "module": "CommonJS",
-      "jsx": "react-jsx",
-      "tsx": "react-tsx",
-      "target": "es5"
+      "module": "CommonJS"
     }
   },
   "baseUrl": ".",
