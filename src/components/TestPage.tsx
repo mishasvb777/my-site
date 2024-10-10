@@ -7,7 +7,7 @@ export const TestPage = () => {
   useEffect(() => {
     const displayData = async () => {
       const data = await getHomePage()
-      setMessage(message)
+      setMessage(data.message)
     }
 
     const timeId = setTimeout(() => {
