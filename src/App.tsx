@@ -1,11 +1,11 @@
 import React from 'react'
-import { TestPage } from './components/TestPage'
+import { Container } from '@mui/material'
+import { Main } from './components/Main'
 
 export const App: React.FC = () => {
   return (
-    <div>
-      <h1>Hello, React!</h1>
-      <TestPage />
-    </div>
+    <Container fixed>
+      <Main />
+    </Container>
   )
 }
