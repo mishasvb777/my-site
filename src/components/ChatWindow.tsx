@@ -12,7 +12,7 @@ import {
   ChatMessage,
 } from './styled'
 
-export const socket = io('http://localhost:3000')
+export const socket = io('http://194.58.114.13:3000')
 
 type Message = {
   id: number
